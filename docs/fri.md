@@ -41,9 +41,7 @@ $$ \lbrace f^\star(\omega^{2i})\rbrace_{i=0}^{N/2-1} $$
 $$ = \left\lbrace  \frac{f(\omega^i) + f(-\omega^i)}{2} + \alpha \cdot \frac{f(\omega^i) - f(-\omega^i)}{2 \omega^i} \right\rbrace_{i=0}^{N/2-1} $$
 $$ = \lbrace  2^{-1} \cdot \left( ( 1 + \alpha \cdot \omega^{-i} ) \cdot f(\omega^i) + (1 - \alpha \cdot \omega^{-i} ) \cdot f(-\omega^i) \right) \rbrace_{i=0}^{N/2-1} $$
 
-Since the order of $\omega$ is $N$, we have $\omega^{N/2} = -1$, and therefore $f(-\omega^i) = f(\omega^{N/2 + i})$. This substitution makes it clear that even though the index iterates over half the range (from $0$ to $N/2-1$), all the points of $\lbrace f(\omega^i)\rbrace_{i=0}^{N-1}$
-
-are involved in the derivation of $\lbrace f^\star(\omega^{2i})\rbrace_{i=0}^{N/2-1}$. It does not matter that the latter codeword has half the length; its polynomial has half the degree.
+Since the order of $\omega$ is $N$, we have $\omega^{N/2} = -1$, and therefore $f(-\omega^i) = f(\omega^{N/2 + i})$. This substitution makes it clear that even though the index iterates over half the range (from $0$ to $N/2-1$), all the points of $\lbrace f(\omega^i)\rbrace_{i=0}^{N-1}$ are involved in the derivation of $\lbrace f^\star(\omega^{2i})\rbrace_{i=0}^{N/2-1}$. It does not matter that the latter codeword has half the length; its polynomial has half the degree.
 
 At this point it is possible to describe the mechanics for one round of the FRI protocol. The prover commits to $f(X)$ by sending the Merkle root of its codeword to the verifier. The verifier responds with the random challenge $\alpha$. The prover computes $f^\star(X)$ and commits to it by sending the Merkle root of $\lbrace f^\star(\omega^{2i})\rbrace_{i=0}^{N/2-1}$ to the verifier.
 
