@@ -77,7 +77,7 @@ In addition to the code snippets contained in the text, there is full working py
 
 ## Questions and Discussion
 
-The best place for questions and discussion is on the [community forum of the zero-knowledge podcast](https://community.zeroknowledge.fm). 
+The best place for questions and discussion is [the ZKHack Discord](https://discord.com/invite/5FQymwzAnf). 
 
 ## Acknowledgements
 
